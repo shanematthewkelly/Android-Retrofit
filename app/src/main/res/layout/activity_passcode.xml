@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Passcode.PasscodeActivity"
+    android:background="#fff">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraintPasscode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:maxLines="1"
+            android:textColorHint="@color/darkgray"
+            app:layout_constraintBottom_toTopOf="@+id/passcodeconfirmation"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                android:maxLength="4"
+                android:id="@+id/passcodeInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:ems="10"
+                android:padding="10dp"
+                android:inputType="none"
+                android:hint="Passcode"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/passcodeconfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/login_button_style"
+            android:drawableRight="@drawable/ic_person_pin_black_24dp"
+            android:text="CONFIRM  "
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/topOfKeyPad"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topOfKeyPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.48" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.72" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vert1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vert3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vert4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.64" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/second"
+            app:layout_constraintEnd_toStartOf="@+id/vert3"
+            app:layout_constraintStart_toStartOf="@+id/vert1"
+            app:layout_constraintTop_toTopOf="@+id/topOfKeyPad" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/second"
+            app:layout_constraintEnd_toStartOf="@+id/vert4"
+            app:layout_constraintStart_toStartOf="@+id/vert3"
+            app:layout_constraintTop_toTopOf="@+id/topOfKeyPad" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/second"
+            app:layout_constraintEnd_toStartOf="@+id/vert2"
+            app:layout_constraintStart_toStartOf="@+id/vert4"
+            app:layout_constraintTop_toTopOf="@+id/topOfKeyPad" />
+
+        <TextView
+            android:id="@+id/num4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/third"
+            app:layout_constraintEnd_toStartOf="@+id/vert3"
+            app:layout_constraintStart_toStartOf="@+id/vert1"
+            app:layout_constraintTop_toTopOf="@+id/second" />
+
+        <TextView
+            android:id="@+id/num5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/third"
+            app:layout_constraintEnd_toStartOf="@+id/vert4"
+            app:layout_constraintStart_toStartOf="@+id/vert3"
+            app:layout_constraintTop_toTopOf="@+id/second" />
+
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="6"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/third"
+            app:layout_constraintEnd_toStartOf="@+id/vert2"
+            app:layout_constraintStart_toStartOf="@+id/vert4"
+            app:layout_constraintTop_toTopOf="@+id/second" />
+
+        <TextView
+            android:id="@+id/num7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/fourth"
+            app:layout_constraintEnd_toStartOf="@+id/vert3"
+            app:layout_constraintStart_toStartOf="@+id/vert1"
+            app:layout_constraintTop_toTopOf="@+id/third" />
+
+        <TextView
+            android:id="@+id/num8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="8"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/fourth"
+            app:layout_constraintEnd_toStartOf="@+id/vert4"
+            app:layout_constraintStart_toStartOf="@+id/vert3"
+            app:layout_constraintTop_toTopOf="@+id/third" />
+
+        <TextView
+            android:id="@+id/num9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="9"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/fourth"
+            app:layout_constraintEnd_toStartOf="@+id/vert2"
+            app:layout_constraintStart_toStartOf="@+id/vert4"
+            app:layout_constraintTop_toTopOf="@+id/third" />
+
+        <TextView
+            android:id="@+id/num0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/fifth"
+            app:layout_constraintEnd_toStartOf="@+id/vert4"
+            app:layout_constraintStart_toStartOf="@+id/vert3"
+            app:layout_constraintTop_toTopOf="@+id/fourth" />
+
+        <ImageView
+            android:id="@+id/gotofingerprint"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/fifth"
+            app:layout_constraintEnd_toStartOf="@+id/vert3"
+            app:layout_constraintStart_toStartOf="@+id/vert1"
+            app:layout_constraintTop_toTopOf="@+id/fourth"
+            app:srcCompat="@drawable/myfingerprint" />
+
+        <ImageView
+            android:id="@+id/deleteInput"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/fifth"
+            app:layout_constraintEnd_toStartOf="@+id/vert2"
+            app:layout_constraintStart_toStartOf="@+id/vert4"
+            app:layout_constraintTop_toTopOf="@+id/fourth"
+            app:srcCompat="@drawable/ic_backspace" />
+
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_marrow" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
